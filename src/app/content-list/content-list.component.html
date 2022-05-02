@@ -1,0 +1,22 @@
+<div class="content-list">
+    <div class="content-list-item" *ngFor = "let item of contentList">
+        <a
+            [routerLink]="['/content', item.pathName]"
+            [title]="item.title"
+        >
+            <h1 class="title">{{item.title}}</h1>
+            <p >
+                {{item.createTime | date: 'yyyy-MM-dd'}}
+                <br>
+                {{item.introduction}}
+            </p>
+        </a>
+    </div>
+    <div class = page-index>
+        <div class="page-index-list" *ngFor="let pageIndex of pageIndexList">
+            <button class="page-index-item" (click)="jumpPage(pageIndex)" title="menu" id="menuButton">
+                {{pageIndex}}
+            </button>
+        </div>
+    </div>
+</div>

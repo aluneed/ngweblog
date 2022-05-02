@@ -1,0 +1,9 @@
+<div class="sidenav-list" id="sidenav-list">
+    <div class="sidenav-list-item" *ngFor="let sidenavListItem of sidenavList">
+        <a  [routerLink]="sidenavListItem.path"
+            [title]="sidenavListItem.name"
+        >
+            {{sidenavListItem.name}}
+        </a>
+    </div>
+</div>

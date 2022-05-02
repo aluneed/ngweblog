@@ -1,0 +1,15 @@
+<div class="content-container">
+    <div class="title">
+        <h1>{{content?.title}}</h1>
+    </div>
+
+    <div class="content">
+        <!-- <markdown>
+            # markdown
+        </markdown> -->
+        <markdown
+            [data]="content?.content"
+        >
+        </markdown>
+    </div>
+</div>

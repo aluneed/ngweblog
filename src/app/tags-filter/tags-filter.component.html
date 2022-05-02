@@ -1,0 +1,8 @@
+<div class="tags-filter">
+    <button class="tag" 
+    *ngFor="let tag of tags"
+    (click)="select(tag)"
+    >
+        {{tag}}
+    </button>
+</div>

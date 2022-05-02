@@ -1,0 +1,9 @@
+app-pannel {
+
+    float: right;
+    right: 5%;
+    top: 20%;
+    position: fixed;
+
+    z-index: 999;
+}
