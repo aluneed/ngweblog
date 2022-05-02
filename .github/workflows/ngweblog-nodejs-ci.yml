@@ -45,7 +45,7 @@ jobs:
          username: ${{ secrets.USERNAME }}
          key: ${{ secrets.SSH_ACTION_KEY }}
          port: ${{ secrets.SSH_PORT }}
-         source: '${{ github.workspace }}/dist'
+         source: '${{ github.workspace }}/dist/*'
          target: "/var/www"
 #       - name: executing remote ssh commands using password
 #         uses: appleboy/ssh-action@master
