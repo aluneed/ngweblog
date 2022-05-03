@@ -38,11 +38,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - run: mkdir ~/ngweblog
+      - run: mkdir ~/www
       - uses: actions/download-artifact@v2
         with:
           name: ngweblog
-          path: ngweblog
+          path: www
       - name: copy file via ssh password
         uses: appleboy/scp-action@master
         with:
@@ -50,8 +50,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_ACTION_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          source: ngweblog/*
-          target: "/var/www/"
+          source: www/*
+          target: "/var/"
 #       - name: executing remote ssh commands using password
 #         uses: appleboy/ssh-action@master
 #         with:
