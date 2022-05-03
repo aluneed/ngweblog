@@ -45,8 +45,8 @@ jobs:
          username: ${{ secrets.USERNAME }}
          key: ${{ secrets.SSH_ACTION_KEY }}
          port: ${{ secrets.SSH_PORT }}
-         source: '${{ github.workspace }}/dist/*'
-         target: "/var/www"
+         source: '${{ github.workspace }}/dist/ngweblog/*'
+         target: "/var/www/ngweblog"
 #       - name: executing remote ssh commands using password
 #         uses: appleboy/ssh-action@master
 #         with:
