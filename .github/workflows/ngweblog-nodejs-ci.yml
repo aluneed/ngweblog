@@ -48,7 +48,8 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_ACTION_KEY }}
+          password: ${{ secrets.PASSWORD }}
+#           key: ${{ secrets.SSH_ACTION_KEY }}
           port: ${{ secrets.SSH_PORT }}
           source: www/*
           target: "/var/"
