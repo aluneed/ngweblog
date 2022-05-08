@@ -19,9 +19,15 @@ export class WeblogService {
       account: account,
       password: password
     }
-    return this.http.post<WeblogResponse>(
-      "/api/login", user ,{headers: headers}
-    );
+    // return this.http.post<WeblogResponse>(
+    //   "/api/login", user ,{headers: headers}
+    // );
+    this.http.post<WeblogResponse>(
+      "/api/user/login", user ,{headers: headers}
+    ).subscribe(resp => {
+      this.token = resp.data;
+    })
+    return this.token;
   }
 
   getContentList(page: number , pageSize: number) {

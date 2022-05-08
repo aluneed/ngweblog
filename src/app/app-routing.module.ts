@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContentContainerComponent } from './content-container/content-container.component';
 import { ContentListComponent } from './content-list/content-list.component';
+import {LoginComponent} from './login/login.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   }, {
     path: 'content/:pathName',
     component: ContentContainerComponent
+  }, {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 

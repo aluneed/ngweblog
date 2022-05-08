@@ -2,11 +2,11 @@
     <div class="title">
         <h1>{{content?.title}}</h1>
     </div>
-
+    <div class="date">
+        <p>{{content?.createTime | date: 'yyyy-MM-dd'}}</p>
+    </div>
     <div class="content">
-        <!-- <markdown>
-            # markdown
-        </markdown> -->
+        <!-- https://github.com/jfcere/ngx-markdown -->
         <markdown
             [data]="content?.content"
         >

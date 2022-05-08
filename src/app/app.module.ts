@@ -14,6 +14,8 @@ import { TagsFilterComponent } from './tags-filter/tags-filter.component';
 import { ContentNavComponent } from './content-nav/content-nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown';
+import { FormsModule } from "@angular/forms";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { MarkdownModule } from 'ngx-markdown';
     PannelComponent,
     TagsFilterComponent,
     ContentNavComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

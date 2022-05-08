@@ -1,0 +1,9 @@
+.login-panel
+{
+    display: block;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+    margin: 160px 120px 160px 120px;
+    padding: 128px;
+    border-radius: 4px;
+}
+

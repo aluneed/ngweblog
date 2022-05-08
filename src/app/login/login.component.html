@@ -1,0 +1,17 @@
+<div class="login-panel">
+    
+    
+    <!-- <p>{{account}}</p> -->
+    <div>
+        <label for="account"></label>
+        <input id="account" [(ngModel)]="account" placeholder="account">
+    </div>
+    
+    <div>
+        <label for="password"></label>
+        <input id="password" [(ngModel)]="password" placeholder="password" type="password">
+    </div>
+
+    <button (click)="onSubmit()">submit</button>
+
+</div>
